@@ -1,0 +1,35 @@
+@api = http://localhost:5000/api/chatbot
+
+### Get all question and answer 
+GET {{api}}
+
+### Get a specific question
+POST {{api}}/question
+Content-Type: application/json
+
+{
+    "question": "Como es trabajar en XUMTECH?"
+}
+
+### Create a new question and answer 
+POST {{api}}/newquestion
+Content-Type: application/json
+
+{
+    "question": "¿Test1?",
+    "answer": "test1",
+    "languagename": "Spanish"
+}
+
+### Delete question and answer 
+DELETE {{api}}/23
+
+### Update question and answer 
+PUT {{api}}/26
+Content-Type: application/json
+
+{
+    "question": "¿Test2?",
+    "answer": "test2",
+    "languagename": "Spanish"
+}
